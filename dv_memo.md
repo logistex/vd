@@ -1,0 +1,150 @@
+# 데이터 시각화(data visualization)
+
+## [아나콘다 설치](../anaconda/anaconda.md)
+
+## 가상환경 준비 (아무 폴더에서나)
+```
+$ cd \somewhere\to\work              # 작업 폴더로 이동
+$ conda create -n vnv_dv python=3.8  # vnv_dv 가상환경 생성
+$ conda activate vnv_dv              # 가상환경 활성화
+$ python --versions                  # 파이썬 버전 확인
+...                                  # 작업 수행
+# conda Deactivate                   # 가상환경 비활성화
+```
+
+## Jupyter Notebook
+```
+$ jupyter notebook
+```
+
+## Jupyter Lab
+- 쥬피터 노트북보다 개선된 신품
+- [설치 안내서](./jupyter_lab.md)
+- 작동법
+```
+$ jupyter lab
+```
+
+## git 작업
+### 1) 최초 준비 (git 대상 로컬 폴더에서 `Git Bash here`)
+- 초기화
+```bash {.line-numbers}
+$ git init
+$ git config --global user.name "Your Name"
+$ git config --global user.email you@example.com
+```
+
+- .gitignore 파일 작성
+```
+.git
+.ipynb_checkpoints
+```
+
+- 로컬 add/commit
+```
+$ git status
+$ git add --all .
+$ git commit -m "first commit"
+```
+
+- GitHub.com 저장소 준비
+  - 계정 생성
+  - new repository "VisualizeData" 생성
+
+- 리모트 add 및 push
+```
+$ git remote add origin https://github.com/<your-github-username>/VisualizeData.git
+$ git push -u origin master
+```
+
+### 2) 2차 이후 배포 (push)
+```
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Changed the HTML for the site."
+$ git push
+```
+
+## [Markdown for Jupyter notebooks cheatsheet](https://www.ibm.com/support/knowledgecenter/SSHGWL_1.2.3/analyze-data/markd-jupyter.html)
+- atom에서는 안되고, 쥬피터 노트북에서만 작동함
+- Blue boxes (alert-info)
+  <div class="alert alert-block alert-info">
+    <b>Tip:</b> Use blue boxes (alert-info) for tips and notes.
+    If it’s a note, you don’t have to include the word “Note”.
+  </div>
+
+- Yellow boxes (alert-warning)
+  <div class="alert alert-block alert-warning">
+    <b>Example:</b> Use yellow boxes for examples that are not
+    inside code cells, or use for mathematical formulas if needed.
+  </div>
+
+- Green boxes (alert-success)
+  <div class="alert alert-block alert-success">
+    <b>Up to you:</b> Use green boxes sparingly, and only for some specific
+    purpose that the other boxes can't cover. For example, if you have a lot
+    of related content to link to, maybe you decide to use green boxes for
+    related links from each section of a notebook.
+  </div>
+
+- Red boxes (alert-danger)
+  <div class="alert alert-block alert-danger">
+    <b>Just don't:</b> In general, avoid the red boxes. These should only be
+    used for actions that might cause data loss or another major issue.
+  </div>
+
+## 도서 자료
+- 모두의 데이터 과학 with 파이썬 - YES24 - http://m.yes24.com/Goods/Detail/43633333
+- 모두의 데이터 분석 with 파이썬 - YES24 - http://m.yes24.com/Goods/Detail/72227684
+
+## 강좌 자료
+- 빅데이터 분석 결과 시각화 e-koreatech https://e-koreatech.step.or.kr/page/lms/?m1=course&m2=course_detail&course_id=100039
+- 뉴스젤리 http://newsjel.ly/
+- 유용한 '데이터 시각화' 정보 사이트 모음 https://www.bloter.net/archives/369220
+
+## 장고 데이터 시각화
+- Django Packages in charts https://djangopackages.org/grids/g/charts/
+- 장고에서 차트그리기 https://dowtech.tistory.com/3
+- Django Dashboard - Learn by Coding https://dev.to/sm0ke/django-dashboard-learn-by-coding-437l
+- Adding charts to Django admin - https://findwork.dev/blog/adding-charts-to-django-admin/
+- The Best Python Data Visualization Libraries - FusionBrew - The FusionCharts Blog - https://www.fusioncharts.com/blog/best-python-data-visualization-libraries/
+- Integrating Bokeh visualisations into Django Projects. - By - https://hackernoon.com/integrating-bokeh-visualisations-into-django-projects-a1c01a16b67a
+- Beautiful Visual Charts in Django - Better Programming - Medium - https://medium.com/better-programming/prettify-python-django-with-beautiful-visual-charts-836fe6646305
+- How To Create Charts In Django - https://www.fusioncharts.com/blog/creating-charts-in-django/
+- Django and R on Heroku | R-bloggers - https://www.r-bloggers.com/django-and-r-on-heroku/
+- Django and R: Using Open Source Database and Statistical Tools for Efficient Scientific Data Evaluation and Analysis | Request PDF - https://www.researchgate.net/publication/266114045_Django_and_R_Using_Open_Source_Database_and_Statistical_Tools_for_Efficient_Scientific_Data_Evaluation_and_Analysis
+- How do you use R in Python to return an R graph through Django? - Stack Overflow - https://stackoverflow.com/questions/32697469/how-do-you-use-r-in-python-to-return-an-r-graph-through-django
+-
+## 파이썬 데이터 시각화
+- The 25 Best Data Visualizations of 2019 | Visual Learning Center by Visme - https://visme.co/blog/best-data-visualizations/
+- The Python Graph Gallery – Visualizing data – with Python - https://python-graph-gallery.com/
+- The Data Visualisation Catalogue - https://datavizcatalogue.com/
+- Data Viz Project | Collection of data visualizations to get inspired and finding the right type. - https://datavizproject.com/
+- Data visualization - Material Design - https://material.io/design/communication/data-visualization.html#behavior
+
+- Python에서 데이터 시각화하는 다양한 방법 · 어쩐지 오늘은 - https://zzsza.github.io/development/2018/08/24/data-visualization-in-python/
+- 9 Data Visualization Tools That You Cannot Miss in 2019 - https://towardsdatascience.com/9-data-visualization-tools-that-you-cannot-miss-in-2019-3ff23222a927
+- Introduction to Data Visualization in Python - Towards Data Science - https://towardsdatascience.com/introduction-to-data-visualization-in-python-89a54c97fbed
+- 10 Useful Python Data Visualization Libraries for Any Discipline - https://mode.com/blog/python-data-visualization-libraries/
+- Top 5 Python Libraries For Data Visualization - https://analyticsindiamag.com/top-5-python-libraries-for-data-visualization/
+- Interactive Data Visualization in Python With Bokeh – Real Python - https://realpython.com/python-data-visualization-bokeh/
+- Data Visualization with Python | Coursera - https://ko.coursera.org/learn/python-for-data-visualization
+- 유용한 '데이터 시각화' 정보 사이트 모음 | Bloter.net - http://www.bloter.net/archives/369220
+
+- [Handbook_of_Data_Visualization.pdf](./Handbook_of_Data_Visualization.pdf)
+
+## 쥬피터 노트북
+- jupyterhub https://github.com/jupyterhub/jupyterhub
+- jupyterhub Getting Started https://github.com/jupyterhub/jupyterhub
+- [191113 Tutorial Jupyter Notebook: The Definitive Guide (article) - DataCamp](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
+- [170511 IPython Or Jupyter? (article) - DataCamp](https://www.datacamp.com/community/blog/ipython-jupyter)
+- https://colab.research.google.com/notebooks/intro.ipynb
+
+## 영상 자료
+- Hans Rosling: The best stats ever seen https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen#t-291883
+- David McCandless: The beauty of data visualization - TED Talks https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization
+- Aaron Koblin: Visualizing ourselves … https://www.ted.com/talks/aaron_koblin_visualizing_ourselves_with_crowd_sourced_data
+- 5 Great TED Talks about DataViz https://coolinfographics.com/blog/2016/10/10/5-great-ted-talks-about-dataviz.html
+## 참고 자료
+- 신종 코로나 바이러스 맵 http://corona.paullab.synology.me
