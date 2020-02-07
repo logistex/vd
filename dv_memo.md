@@ -67,7 +67,7 @@ $ git commit -m "first commit"
 - 리모트 add 및 push
 ```
 $ git remote add origin https://github.com/<your-github-username>/VisualizeData.git
-$ git push -u origin master
+$ git push -u origin +master
 ```
 
 ### 2) 2차 이후 배포 (push)
