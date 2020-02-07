@@ -80,17 +80,18 @@ $ git push
 ```
 
 ## 도서 자료
-- 모두의 데이터 과학 with 파이썬 http://m.yes24.com/Goods/Detail/43633333
-- 모두의 데이터 분석 with 파이썬 http://m.yes24.com/Goods/Detail/72227684
-- <b>파이썬으로 데이터 주무르기</b> 독특한 예제를 통해 배우는 데이터 분석 입문 http://www.yes24.com/Product/Goods/57670268
-<br>
-- Do it! 쉽게 배우는 R 데이터 분석 http://www.yes24.com/Product/Goods/43868089
-- IT CookBook, R로 배우는 데이터 과학 http://www.hanbit.co.kr/store/books/look.php?p_code=B2093037271
-- 제대로 알고 쓰는 R 통계분석 http://www.hanbit.co.kr/store/books/look.php?p_code=B7014039221
-<br>
-- <b>Visualize This 비주얼라이즈 디스</b> [빅데이터 시대의 데이터 시각화+인포그래픽 기법] http://acornpub.co.kr/book/visualize-this
-- <b>월스트리트저널 인포그래픽 가이드</b> http://www.yes24.com/Product/Goods/12292773
-- 좋아 보이는 것들의 비밀, 인포그래픽 정보로 소통하는 비주얼 스토리텔링 http://www.yes24.com/Product/goods/23452983
+- 파이썬 데이터 분석 계열
+  - 모두의 데이터 과학 with 파이썬 http://m.yes24.com/Goods/Detail/43633333
+  - 모두의 데이터 분석 with 파이썬 http://m.yes24.com/Goods/Detail/72227684
+  - <b>파이썬으로 데이터 주무르기</b> 독특한 예제를 통해 배우는 데이터 분석 입문 http://www.yes24.com/Product/Goods/57670268
+- R 데이터 분석 계열
+  - Do it! 쉽게 배우는 R 데이터 분석 http://www.yes24.com/Product/Goods/43868089
+  - IT CookBook, R로 배우는 데이터 과학 http://www.hanbit.co.kr/store/books/look.php?p_code=B2093037271
+  - 제대로 알고 쓰는 R 통계분석 http://www.hanbit.co.kr/store/books/look.php?p_code=B7014039221
+- 인포그래픽 계열
+  - <b>Visualize This 비주얼라이즈 디스</b> [빅데이터 시대의 데이터 시각화+인포그래픽 기법] http://acornpub.co.kr/book/visualize-this
+  - <b>월스트리트저널 인포그래픽 가이드</b> http://www.yes24.com/Product/Goods/12292773
+  - 좋아 보이는 것들의 비밀, 인포그래픽 정보로 소통하는 비주얼 스토리텔링 http://www.yes24.com/Product/goods/23452983
 
 ## 강좌 자료
 - 빅데이터 분석 결과 시각화 e-koreatech https://e-koreatech.step.or.kr/page/lms/?m1=course&m2=course_detail&course_id=100039
