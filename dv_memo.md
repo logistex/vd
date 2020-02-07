@@ -80,8 +80,17 @@ $ git push
 ```
 
 ## 도서 자료
-- 모두의 데이터 과학 with 파이썬 - YES24 - http://m.yes24.com/Goods/Detail/43633333
-- 모두의 데이터 분석 with 파이썬 - YES24 - http://m.yes24.com/Goods/Detail/72227684
+- 모두의 데이터 과학 with 파이썬 http://m.yes24.com/Goods/Detail/43633333
+- 모두의 데이터 분석 with 파이썬 http://m.yes24.com/Goods/Detail/72227684
+- <b>파이썬으로 데이터 주무르기</b> 독특한 예제를 통해 배우는 데이터 분석 입문 http://www.yes24.com/Product/Goods/57670268
+<br>
+- Do it! 쉽게 배우는 R 데이터 분석 http://www.yes24.com/Product/Goods/43868089
+- IT CookBook, R로 배우는 데이터 과학 http://www.hanbit.co.kr/store/books/look.php?p_code=B2093037271
+- 제대로 알고 쓰는 R 통계분석 http://www.hanbit.co.kr/store/books/look.php?p_code=B7014039221
+<br>
+- <b>Visualize This 비주얼라이즈 디스</b> [빅데이터 시대의 데이터 시각화+인포그래픽 기법] http://acornpub.co.kr/book/visualize-this
+- <b>월스트리트저널 인포그래픽 가이드</b> http://www.yes24.com/Product/Goods/12292773
+- 좋아 보이는 것들의 비밀, 인포그래픽 정보로 소통하는 비주얼 스토리텔링 http://www.yes24.com/Product/goods/23452983
 
 ## 강좌 자료
 - 빅데이터 분석 결과 시각화 e-koreatech https://e-koreatech.step.or.kr/page/lms/?m1=course&m2=course_detail&course_id=100039
@@ -131,7 +140,12 @@ $ git push
 - David McCandless: The beauty of data visualization - TED Talks https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization
 - Aaron Koblin: Visualizing ourselves … https://www.ted.com/talks/aaron_koblin_visualizing_ourselves_with_crowd_sourced_data
 - 5 Great TED Talks about DataViz https://coolinfographics.com/blog/2016/10/10/5-great-ted-talks-about-dataviz.html
-## 참고 자료
+
+## 신종 코로나
+- 신종 코로나바이러스, 현황 "한 눈에 쉽게" 확인하는 법 http://www.biotimes.co.kr/news/articleView.html?idxno=2426
+- 존스 홉킨스 시스템 과학/공학 센터 https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
+- 이동훈(27) 경희대 https://coronamap.site
+- 홍준수(21) 호주 멜버른 대락교 https://coronamap.live
 - 신종 코로나 바이러스 맵 http://corona.paullab.synology.me
 
 ## [Markdown for Jupyter notebooks cheatsheet](https://www.ibm.com/support/knowledgecenter/SSHGWL_1.2.3/analyze-data/markd-jupyter.html)
