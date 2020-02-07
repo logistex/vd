@@ -215,7 +215,7 @@ $ jupyter lab
 ```
 # 현재 vnv_dv 활성화된 상태라고 가정하고
 $ conda list                              # 설치된 패키지 내역 확인
-$ conda env export > requirements.yml     # 내용 확인 (!!! utf8로 변경 !!!)
+$ conda env export > requirements.yml     # 내용 확인 (!!! utf8(BOM 없음)로 변경 !!!)
 $ conda remove xlrd                       # 특정 패키지 삭제
 $ conda list                              # 삭제된 패키지 내역 확인
 $ conda deactivate                        # 비활성화
