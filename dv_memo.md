@@ -224,7 +224,7 @@ $ conda deactivate                        # 비활성화
 $ conda env list                          # 가상환경 목록 확인
 $ conda remove -n vnv_dv --all            # 가상환경 삭제
 $ conda env list                          # 삭제된 상황 확인
-$ conda env create -f ./requirements.yml  # 가상환경 재설치 (!!! utf8로 변경 !!!)
+$ conda env create -f ./requirements.yml  # 가상환경 재설치 (!!! utf8(BOM 없음)로 변경 !!!)
 $ conda env list                          # 재설치된 가상환경 확인
 ```
 - 다시 가상환경 활성화하고, 랩 기동 후,
