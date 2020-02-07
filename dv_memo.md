@@ -1,31 +1,44 @@
 # 데이터 시각화(data visualization)
 
-## [아나콘다 설치](../anaconda/anaconda.md)
+## 수업 자료 [다운로드](https://github.com/logistex/vd)
+- 링크에 접속하여 `Clone or download` 단추 클릭하고, `download ZIP` 클릭
+- 다운로드된 `dv-master.zip` 파일을 압축해제하고, 작업 폴더로 이동
 
-## 가상환경 준비 (아무 폴더에서나)
+## [아나콘다 설치](./anaconda.md)
+
+## 가상환경 활용 (아무 폴더에서나)
 ```
 $ cd \somewhere\to\work              # 작업 폴더로 이동
 $ conda create -n vnv_dv python=3.8  # vnv_dv 가상환경 생성
+
 $ conda activate vnv_dv              # 가상환경 활성화
 $ python --versions                  # 파이썬 버전 확인
 ...                                  # 작업 수행
 # conda Deactivate                   # 가상환경 비활성화
 ```
 
-## Jupyter Notebook
+## Jupyter Notebook (쥬피터 랩 사용을 권고)
 ```
 $ jupyter notebook
 ```
 
 ## Jupyter Lab
 - 쥬피터 노트북보다 개선된 신품
-- [설치 안내서](./jupyter_lab.md)
 - 작동법
 ```
-$ jupyter lab
+# 작업 폴더에서,
+$ conda activate vnv_dv             # 일단 가상환경 활성화
+$ conda install jupyterlab          # 가상환경 내부에서 설치
+$ jupyter lab                       # 가상환경 내부에서 실행
 ```
+- 본 강의 노트 `dv_memo.md`를 열어보기
+- `/DataScience/source_code/01. 인구대비 CCTV 설치량 분석.ipynb` 열어보기
 
 ## git 작업
+### 0) git [설치 안내서](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
+- [GitHub Desktop 웹사이트](http://desktop.github.com/)
+- [GitHub Desktop 설치 및 다운로드](https://gocoder.tistory.com/1549)
+
 ### 1) 최초 준비 (git 대상 로컬 폴더에서 `Git Bash here`)
 - 초기화
 ```bash {.line-numbers}
@@ -65,34 +78,6 @@ $ git status
 $ git commit -m "Changed the HTML for the site."
 $ git push
 ```
-
-## [Markdown for Jupyter notebooks cheatsheet](https://www.ibm.com/support/knowledgecenter/SSHGWL_1.2.3/analyze-data/markd-jupyter.html)
-- atom에서는 안되고, 쥬피터 노트북에서만 작동함
-- Blue boxes (alert-info)
-  <div class="alert alert-block alert-info">
-    <b>Tip:</b> Use blue boxes (alert-info) for tips and notes.
-    If it’s a note, you don’t have to include the word “Note”.
-  </div>
-
-- Yellow boxes (alert-warning)
-  <div class="alert alert-block alert-warning">
-    <b>Example:</b> Use yellow boxes for examples that are not
-    inside code cells, or use for mathematical formulas if needed.
-  </div>
-
-- Green boxes (alert-success)
-  <div class="alert alert-block alert-success">
-    <b>Up to you:</b> Use green boxes sparingly, and only for some specific
-    purpose that the other boxes can't cover. For example, if you have a lot
-    of related content to link to, maybe you decide to use green boxes for
-    related links from each section of a notebook.
-  </div>
-
-- Red boxes (alert-danger)
-  <div class="alert alert-block alert-danger">
-    <b>Just don't:</b> In general, avoid the red boxes. These should only be
-    used for actions that might cause data loss or another major issue.
-  </div>
 
 ## 도서 자료
 - 모두의 데이터 과학 with 파이썬 - YES24 - http://m.yes24.com/Goods/Detail/43633333
@@ -148,3 +133,31 @@ $ git push
 - 5 Great TED Talks about DataViz https://coolinfographics.com/blog/2016/10/10/5-great-ted-talks-about-dataviz.html
 ## 참고 자료
 - 신종 코로나 바이러스 맵 http://corona.paullab.synology.me
+
+## [Markdown for Jupyter notebooks cheatsheet](https://www.ibm.com/support/knowledgecenter/SSHGWL_1.2.3/analyze-data/markd-jupyter.html)
+- atom에서는 안되고, 쥬피터 노트북에서만 작동함
+- Blue boxes (alert-info)
+  <div class="alert alert-block alert-info">
+    <b>Tip:</b> Use blue boxes (alert-info) for tips and notes.
+    If it’s a note, you don’t have to include the word “Note”.
+  </div>
+
+- Yellow boxes (alert-warning)
+  <div class="alert alert-block alert-warning">
+    <b>Example:</b> Use yellow boxes for examples that are not
+    inside code cells, or use for mathematical formulas if needed.
+  </div>
+
+- Green boxes (alert-success)
+  <div class="alert alert-block alert-success">
+    <b>Up to you:</b> Use green boxes sparingly, and only for some specific
+    purpose that the other boxes can't cover. For example, if you have a lot
+    of related content to link to, maybe you decide to use green boxes for
+    related links from each section of a notebook.
+  </div>
+
+- Red boxes (alert-danger)
+  <div class="alert alert-block alert-danger">
+    <b>Just don't:</b> In general, avoid the red boxes. These should only be
+    used for actions that might cause data loss or another major issue.
+  </div>
