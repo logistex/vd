@@ -9,9 +9,9 @@
 ## 가상환경 활용 (아무 폴더에서나)
 ```
 $ cd \somewhere\to\work              # 작업 폴더로 이동
-$ conda create -n vnv_dv python=3.8  # vnv_dv 가상환경 생성
+$ conda create -n vnv_vd python=3.8  # vnv_vd 가상환경 생성
 
-$ conda activate vnv_dv              # 가상환경 활성화
+$ conda activate vnv_vd              # 가상환경 활성화
 $ python --versions                  # 파이썬 버전 확인
 ...                                  # 작업 수행
 # conda Deactivate                   # 가상환경 비활성화
@@ -27,11 +27,11 @@ $ jupyter notebook
 - 작동법
 ```
 # 작업 폴더에서,
-$ conda activate vnv_dv             # 일단 가상환경 활성화
+$ conda activate vnv_vd             # 일단 가상환경 활성화
 $ conda install jupyterlab          # 가상환경 내부에서 설치
 $ jupyter lab                       # 가상환경 내부에서 실행
 ```
-- 본 강의 노트 `dv_memo.md`를 열어보기
+- 본 강의 노트 `vd_memo.md`를 열어보기
 - `/DataScience/source_code/01. 인구대비 CCTV 설치량 분석.ipynb` 열어보기
 
 ## git 작업
@@ -184,7 +184,8 @@ $ git push
 - 가상환경 활성화
 ```
 $ conda info --envs             # 가상환경 정보 확인
-$ conda activate vnv_dv         # 활성화
+$ conda activate vnv_vd         # 활성화
+# vnv_vd 가상환경에는 파이썬과 jupyterlab 만 설치되어 있었음
 
 # 필요한 모듈 설치
 $ conda install pandas
@@ -213,18 +214,18 @@ $ jupyter lab
 #### 3) 가상환경 다루기 연습
 - 가상환경에 설치된 내역을 파일로 저장하고 활용
 ```
-# 현재 vnv_dv 활성화된 상태라고 가정하고
+# 현재 vnv_vd 활성화된 상태라고 가정하고
 $ conda list                              # 설치된 패키지 내역 확인
-$ conda env export > requirements.yml     # 내용 확인 (!!! utf8(BOM 없음)로 변경 !!!)
+$ conda env export > vd.yml               # 내용 확인 (!!! utf8(BOM 없음)로 변경 !!!)
 $ conda remove xlrd                       # 특정 패키지 삭제
 $ conda list                              # 삭제된 패키지 내역 확인
 $ conda deactivate                        # 비활성화
 
 # 현재 열려 있는 프롬프트 창을 닫았다가 다시 열고
 $ conda env list                          # 가상환경 목록 확인
-$ conda remove -n vnv_dv --all            # 가상환경 삭제
+$ conda remove -n vnv_vd --all            # 가상환경 삭제
 $ conda env list                          # 삭제된 상황 확인
-$ conda env create -f ./requirements.yml  # 가상환경 재설치 (!!! utf8(BOM 없음)로 변경 !!!)
+$ conda env create -f ./vd.yml            # 가상환경 재설치 (!!! utf8(BOM 없음)로 변경 !!!)
 $ conda env list                          # 재설치된 가상환경 확인
 ```
 - 다시 가상환경 활성화하고, 랩 기동 후,

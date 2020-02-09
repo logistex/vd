@@ -1,0 +1,1 @@
+../git_init.bat "logistex" logistex@naver.com https://github.com/logistex/vd.git
