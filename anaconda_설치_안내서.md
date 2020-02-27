@@ -1,4 +1,4 @@
-# ﻿[anaconda 설치](https://wonderbout.tistory.com/22)
+# anaconda 설치 안내서
 
 ### 설치 파일 다운로드
 - https://www.anaconda.com/download/
@@ -8,23 +8,23 @@
 - 대부분 'I Agree' 또는 'Next' 단추 클릭
 - Install for 'Just Me' (recommended)
 - Destination Folder 'C:\Anaconda3'
-- 'Add Anaconda to my PATH environment variable' (기본값대로 체크 해제)
+- 'Add Anaconda to my PATH environment variable' (<u>기본값대로 체크 해제</u>)
 - 'Register Anaconda as my default Python 3.7' (기본값대로 체크)
 - 'Install Microsoft VSCode' skip
 - Finish
 ### 설치 사항 확인
-- 윈도우 시작 메뉴에 'Anaconda3 (64-bit)' 폴더 및 메뉴 항목 확인
+- 윈도우 시작 메뉴에서 'Anaconda3 (64-bit)' 폴더 및 메뉴 항목 확인
 - 윈도우 시작 메뉴에서 'Anaconda Powershell Prompt (Anaconda3)' 실행
 ```
 (base) PS C:\Users\logis> python --version
-Python 3.7.4
+Python 3.7.6
 ```
-### Getting started with Anaconda
-- Anaconda Navigator (Anaconda3) 실행 (오래 걸려요 ...)
-- Spyder 3.3.6
-    - heollo.py 파일을 작성하고 런 실행
+### 아나콘다 실행
+- `Anaconda Navigator (Anaconda3)` 실행 (오래 걸려요 ...)
+- `Spyder`(Scientific Python Development Environment)
+    - 'Hello, Anaconda!' 출력하는 코드 작성하고 런 실행
     - Spyder 종료
-- Jupyter Notebook
+- `Jupyter Notebook`
     - 'C:\Users\logis\' 폴더가 브라우즈 됨
     - Document 폴더로 진입
     - `New > Python 3` 버튼으로 새 노트북 생성
@@ -32,7 +32,7 @@ Python 3.7.4
     - 노트북 이름을 'Hello'로 변경
     - 저장된 'Hello.ipynb' 파일 확인
     - 노트북 종료
-- Anaconda Prompt 활용하여 파이썬 프로그램 작성
+- `Anaconda (Powershell) Prompt` 활용하여 파이썬 프로그램 작성
     - 시작 메뉴에서 'Anaconda Prompt' 또는 'Anaconda Powershell Prompt' 실행
     - 'Anaconda Prompt' 또는 'Anaconda Powershell Prompt' 종료
 ```
@@ -251,3 +251,5 @@ base                     C:\anaconda3
   <p>* <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">python</span></code> updates to the most recent in the series,
   so any Python 2.x would update to the latest 2.x and any Python 3.x
   to the latest 3.x.</p>
+
+- ﻿[아나콘다(Anaconda) 설치 하기 on Windows](https://wonderbout.tistory.com/22)
