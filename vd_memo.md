@@ -1,10 +1,10 @@
 # 데이터 시각화(data visualization)
 
-## 수업 자료 [다운로드](https://github.com/logistex/vd)
-- 링크에 접속하여 `Clone or download` 단추 클릭하고, `download ZIP` 클릭
-- 다운로드된 `dv-master.zip` 파일을 압축해제하고, 작업 폴더로 이동
+- 수업 자료 다운로드는 [여기](https://github.com/logistex/vd)에서
+  - 링크에 접속하여 `Clone or download` 단추 클릭하고, `download ZIP` 클릭
+  - 다운로드된 `dv-master.zip` 파일을 압축해제하고, 작업 폴더로 이동
 
-## [아나콘다 설치](./anaconda.md)
+- 아나콘다 설치 안내는 [anaconda_설치_안내서.md](./anaconda_설치_안내서.md) 문서를 참고
 
 ## 가상환경 활용 (아무 폴더에서나)
 ```
