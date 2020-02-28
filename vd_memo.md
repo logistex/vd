@@ -97,6 +97,8 @@ $ git push
 - 빅데이터 분석 결과 시각화 e-koreatech https://e-koreatech.step.or.kr/page/lms/?m1=course&m2=course_detail&course_id=100039
 - 뉴스젤리 http://newsjel.ly/
 - 유용한 '데이터 시각화' 정보 사이트 모음 https://www.bloter.net/archives/369220
+- 흠시 블로그 https://dailyheumsi.tistory.com/category/공부하며%20적어놓기%201/데이터%20시각화
+- map in django https://medium.com/@h4k1m0u/displaying-a-map-in-a-django-webapp-1-3-creating-a-gis-database-with-postgresql-and-postgis-e596d3c2310
 
 ## 장고 데이터 시각화
 - Django Packages in charts https://djangopackages.org/grids/g/charts/
