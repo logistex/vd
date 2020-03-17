@@ -1,5 +1,5 @@
 # anaconda 설치 안내서
-
+[아나콘다(anaconda) 설치하기 -윈도우 10 by vmpo](https://vmpo.tistory.com/34) 참고
 ### 설치 파일 다운로드
 - https://www.anaconda.com/download/
 - Windows, Python 3.7 version, 64-Bit Graphical Installer
@@ -70,34 +70,7 @@ conda 4.8.2
   - [The Definitive Guide to Conda Environments](https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533)
   - [Conda vs. pip vs. virtualenv commands](https://conda.io/projects/conda/en/latest/commands.html#conda-vs-pip-vs-virtualenv-commands)
 - Conda 가상환경 활용
-  - `venv`(파이썬 가상환경 관리자)로 가상환경을 만들 때는 가상환경을 저장할 폴더를 지정했었음
-    `% python3 -m venv /path/to/new/environment`
-  - Conda 가상환경은 저장 폴더를 지정하지 않고 생성하며, 실제 저장되는 위치는
-    아나콘다 설치 폴더 하위의 `envs` 폴더에 생성됨
-  - `venv`에서는 가상환경을 삭제하는 명령이 없고, 비활성화된 상태에서 폴더를 삭제하면 됨
-  - Conda 가상환경은 가상환경을 삭제하는 명령이 별도로 존재함, 비활성화 된 상태에서
-    `% conda remove my_venv`
-```
-# 가상환경 생성 (아무 폴더에서나)
-% conda create --name conda-env python
-% conda create -n conda-env python=3.7
-% conda create -n conda-env numpy requests
-% conda create -n conda-env python=3.7 numpy=1.16.1 requests=2.19.1
-# 폴더를 지정하여 가상환경 생성
-% conda create --prefix c:/vnv/python38 python=3.8
-
-# 가상환경 활성화
-% conda activate conda-env
-(conda-env) %
-
-# 가상환경 비활성화
-% conda deactivate
-
-# 가상환경 삭제
-% conda remove conda-env --all
-
-# 기타 더 상세한 정보는 [The Definitive Guide to Conda Environments] 참조
-```
+콘다 가상환경 활용은 [../conda_vnv.md](../conda_vnv.md) 문서를 참고
 - conda 홈 디렉토리를 작업 폴더로 변경
   - 시작 메뉴에서 `Anaconda Powershell Prompt` 항목을 우 클릭 후,
     `자세히` > `파일 위치 열기` 선택
@@ -143,6 +116,13 @@ Python 3.8.1
 #
                       *  C:\Anaconda3
 base                     C:\anaconda3
+
+# 가상환경 스펙 저장 및 생성
+$ conda env export --name vnv_geo > vnv_geo_spec.yml
+$ conda env create --name vnv_geo --file vnv_geo_spec.yml
+
+$ conda list --name vnv_geo --explicit > vnv_geo_spec.txt
+$ conda create --name vnv_geo --file vnv_geo_spec.txt
 ```
 
 
@@ -251,5 +231,3 @@ base                     C:\anaconda3
   <p>* <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">python</span></code> updates to the most recent in the series,
   so any Python 2.x would update to the latest 2.x and any Python 3.x
   to the latest 3.x.</p>
-
-- ﻿[아나콘다(Anaconda) 설치 하기 on Windows](https://wonderbout.tistory.com/22)
