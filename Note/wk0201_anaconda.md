@@ -1,8 +1,9 @@
 # 아나콘다 설치/활용 안내
 - 본 노트는 아래 기사를 요약 정리한 내용임, 자세한 설명을 원하면 원문 참고
   181106, 바웃, ﻿[anaconda 설치](https://wonderbout.tistory.com/22)
-- 아나콘다 파이썬 대 (일반) 파이썬
+  - 아나콘다 파이썬 대 (일반) 파이썬
   [![](./img/ch01_anaconda.png)](https://snowdeer.github.io/python/2017/11/07/python-vs-anaconda/)
+
 - 아나콘다 설치 전에 기존 파이썬을 먼저 제거
   - 윈도우에서 파이썬 제거 방법은 [여기](https://copycoding.tistory.com/58)를 참고
   - 파이썬 실행과 관련한 PATH 정보는 별도로 삭제해야 하며,
@@ -120,11 +121,19 @@ Python 3.7.4
   % conda activate conda-env
   (conda-env) %
 
+  # 가상환경 복제 파일 생성
+  (conda-env) %conda list --export > conda-env.txt
+  (conda-env) %conda env export > conda-env.yml
+
   # 가상환경 비활성화 (현재 활성화 상태인 가상환경을 비활성화)
-  % conda deactivate
+  (conda-env) % conda deactivate
 
   # 가상환경 삭제
   % conda remove conda-env --all
+
+  # 가상환경 복제
+  % conda create --name conda-env --file conda-env.txt
+  % conda env create -f conda-env.yml
   ```
   - 더 상세한 내용은 [The Definitive Guide to Conda Environments](https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533) 참고
 - conda 홈 디렉토리를 작업 폴더로 변경
